@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/.claude
+/.claude/*
+
+# dev artifacts (screenshots, downloaded reference template, logs)
+dev.log
+/scripts/shots/
+/scripts/ref/
