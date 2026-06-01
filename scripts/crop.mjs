@@ -29,7 +29,7 @@ const y = Number(process.env.Y ?? 0);
 const w = Number(process.env.W ?? dim.w);
 const h = Number(process.env.H ?? Math.round(dim.w * 0.42));
 
-await page.setViewportSize({ width: dim.w, height: Math.min(dim.h, 4000) });
+await page.setViewportSize({ width: dim.w, height: Math.min(dim.h, 30000) });
 await page.screenshot({ path: OUT, clip: { x, y, width: w, height: h } });
 console.log("saved", OUT, `(${w}x${h} @ ${x},${y})`);
 await browser.close();

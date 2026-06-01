@@ -10,6 +10,7 @@ import { Pricing } from "@/components/sections/pricing";
 import { FAQ } from "@/components/sections/faq";
 import { CTA } from "@/components/sections/cta";
 import { Footer } from "@/components/sections/footer";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <FAQ />
       <CTA />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }

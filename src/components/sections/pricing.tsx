@@ -22,7 +22,7 @@ const tiers = [
   },
   {
     name: "Pro",
-    price: "R$ 49",
+    price: "R$ 119,90",
     period: "/mês",
     tagline: "Para vender mais e organizar toda a operação.",
     features: [
