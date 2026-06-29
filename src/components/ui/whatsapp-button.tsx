@@ -1,7 +1,7 @@
 // Floating WhatsApp contact button (fixed bottom-right).
 // Replace the number in WA_NUMBER with the restaurant's real WhatsApp.
 const WA_NUMBER = "5511999999999";
-const WA_TEXT = "Olá! Quero conhecer o Cardápio Express.";
+const WA_TEXT = "Olá! Quero conhecer o Cardápio Tec.";
 const WA_HREF = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_TEXT)}`;
 
 const WHATSAPP_PATH =

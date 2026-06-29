@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Clean iPhone-style mockup frame (thin bezel + dynamic island).
- * Renders a Cardápio Express app screen inside by default.
+ * Renders a Cardápio Tec app screen inside by default.
  */
 export function Iphone({
   className,
@@ -53,7 +53,7 @@ const items = [
 
 const cats = ["Burgers", "Porções", "Bebidas", "Doces"];
 
-/** Cardápio Express app screens. `variant` selects which screen to show. */
+/** Cardápio Tec app screens. `variant` selects which screen to show. */
 export function MenuScreen({ variant = 0 }: { variant?: number }) {
   const screen = variant % 5;
 

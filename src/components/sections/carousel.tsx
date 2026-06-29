@@ -28,7 +28,7 @@ export function Carousel() {
     <section className="py-24">
       <SectionHeading
         eyebrow="Resultados"
-        title="O que você resolve com o Cardápio Express"
+        title="O que você resolve com o Cardápio Tec"
       />
 
       <div className="mx-auto mt-12 max-w-6xl px-4">

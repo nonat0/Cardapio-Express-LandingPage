@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { UtensilsCrossed } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -32,10 +31,9 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <a href="#" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white">
-            <UtensilsCrossed className="h-[18px] w-[18px]" strokeWidth={2.4} />
-          </span>
-          <span className="text-lg font-bold tracking-tight">Cardápio Express</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logobase2.png" alt="Cardápio Tec" className="h-10 w-auto" />
+          <span className="text-lg font-bold tracking-tight">Cardápio Tec</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

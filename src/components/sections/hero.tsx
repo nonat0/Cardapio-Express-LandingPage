@@ -49,7 +49,7 @@ export function Hero() {
           <span className="rounded-full bg-accent px-2 py-0.5 text-xs font-semibold text-white">
             Novo
           </span>
-          Conheça o Cardápio Express →
+          Conheça o Cardápio Tec →
         </motion.a>
 
         <motion.h1

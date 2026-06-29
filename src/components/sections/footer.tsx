@@ -1,5 +1,3 @@
-import { UtensilsCrossed } from "lucide-react";
-
 function Icon({ path, label }: { path: string; label: string }) {
   return (
     <svg
@@ -25,10 +23,9 @@ export function Footer() {
     <footer className="border-t border-border py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 sm:flex-row">
         <a href="#" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white">
-            <UtensilsCrossed className="h-[18px] w-[18px]" strokeWidth={2.4} />
-          </span>
-          <span className="text-lg font-bold tracking-tight">Cardápio Express</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logobase2.png" alt="Cardápio Tec" className="h-10 w-auto" />
+          <span className="text-lg font-bold tracking-tight">Cardápio Tec</span>
         </a>
 
         <nav className="flex items-center gap-6 text-sm text-muted-foreground">
@@ -56,7 +53,7 @@ export function Footer() {
         </div>
       </div>
       <p className="mt-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Cardápio Express. Todos os direitos reservados.
+        © {new Date().getFullYear()} Cardápio Tec. Todos os direitos reservados.
       </p>
     </footer>
   );
