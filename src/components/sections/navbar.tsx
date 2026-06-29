@@ -30,10 +30,12 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <a href="#" className="flex items-center gap-2">
+        <a href="#" className="flex flex-col items-center gap-0.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logobase2.png" alt="Cardápio Tec" className="h-10 w-auto" />
-          <span className="text-lg font-bold tracking-tight">Cardápio Tec</span>
+          <span className="text-[12.6px] font-bold leading-none tracking-tight">
+            Cardápio Tec
+          </span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

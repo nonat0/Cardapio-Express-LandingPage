@@ -22,10 +22,12 @@ export function Footer() {
   return (
     <footer className="border-t border-border py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 sm:flex-row">
-        <a href="#" className="flex items-center gap-2">
+        <a href="#" className="flex flex-col items-center gap-0.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logobase2.png" alt="Cardápio Tec" className="h-10 w-auto" />
-          <span className="text-lg font-bold tracking-tight">Cardápio Tec</span>
+          <span className="text-[12.6px] font-bold leading-none tracking-tight">
+            Cardápio Tec
+          </span>
         </a>
 
         <nav className="flex items-center gap-6 text-sm text-muted-foreground">
