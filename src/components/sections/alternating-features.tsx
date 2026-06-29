@@ -26,28 +26,38 @@ const features = [
 
 export function AlternatingFeatures() {
   return (
-    <section id="recursos" className="py-24">
+    <section id="recursos" className="overflow-hidden py-24">
       <SectionHeading eyebrow="Recursos" title="Recursos poderosos" />
 
       <div className="mx-auto mt-16 flex max-w-5xl flex-col gap-20 px-4 sm:gap-28">
         {features.map((f, i) => {
           const flip = i % 2 === 1;
+          // 1º e 3º mockups entram da esquerda; o 2º entra da direita.
+          const fromLeft = i % 2 === 0;
           return (
-            <motion.div
+            <div
               key={f.title}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6 }}
               className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2 sm:gap-12"
             >
-              <div className={cn("flex justify-center", flip && "sm:order-2")}>
+              <motion.div
+                initial={{ opacity: 0, x: fromLeft ? -120 : 120 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                className={cn("flex justify-center", flip && "sm:order-2")}
+              >
                 <Iphone className="w-[210px] sm:w-[240px]">
                   <MenuScreen variant={f.screen} />
                 </Iphone>
-              </div>
-              <div className={cn(flip && "sm:order-1")}>
-                <h3 className="text-4xl font-bold tracking-tight text-zinc-200 sm:text-5xl">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+                className={cn(flip && "sm:order-1")}
+              >
+                <h3 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                   {f.title}
                 </h3>
                 <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
@@ -60,8 +70,8 @@ export function AlternatingFeatures() {
                   Começar agora
                   <ArrowRight className="h-4 w-4" />
                 </a>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           );
         })}
       </div>

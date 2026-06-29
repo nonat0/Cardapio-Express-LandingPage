@@ -13,7 +13,7 @@ const tiers = [
     tagline: "Para começar e testar com o seu restaurante.",
     features: [
       "Cardápio digital com QR Code",
-      "Até 30 pedidos por mês",
+      "30 dias gratuitos de teste",
       "Pedidos em tempo real",
       "Painel da cozinha básico",
     ],

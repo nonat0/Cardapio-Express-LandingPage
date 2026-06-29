@@ -58,7 +58,7 @@ export function MenuScreen({ variant = 0 }: { variant?: number }) {
   const screen = variant % 5;
 
   return (
-    <div className="flex h-full w-full flex-col bg-zinc-50">
+    <div className="absolute inset-0 flex flex-col bg-zinc-50">
       <StatusBar />
 
       {screen === 0 && <MenuList />}

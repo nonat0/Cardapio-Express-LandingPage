@@ -66,7 +66,7 @@ export function Features() {
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-white">
               <f.icon className="h-5 w-5" />
             </div>
-            <h3 className="mt-4 text-lg font-semibold">{f.title}</h3>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">{f.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               {f.desc}
             </p>

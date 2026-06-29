@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cardápio Express
 
-## Getting Started
+Landing page do **Cardápio Express** — cardápio digital com pedidos pela mesa via QR Code e cozinha em tempo real. Construída com [Next.js](https://nextjs.org), Tailwind CSS e Framer Motion.
 
-First, run the development server:
+## Começando
+
+Primeiro, rode o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode editar a página principal em `src/app/page.tsx` e as seções em `src/components/sections/`. A página atualiza automaticamente conforme você salva.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O projeto usa [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para carregar e otimizar a fonte **Inter**.
 
-## Learn More
+## Estrutura
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/` — layout, página e estilos globais.
+- `src/components/sections/` — seções da landing (hero, recursos, preços, etc.).
+- `src/components/ui/` — componentes reutilizáveis (mockup de iPhone, headings, etc.).
+- `public/` — assets estáticos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O site é totalmente estático. O build gera a pasta `out/` via export do Next.js:
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O site é publicado no **Cloudflare Pages** a partir da pasta estática `out/`:
+
+```bash
+npm run build
+npx wrangler pages deploy out --project-name cardapiotec --branch main
+```
+
+Domínio em produção: **https://www.cardapiotec.com**
+
+## Saiba mais
+
+Para aprender mais sobre Next.js:
+
+- [Documentação do Next.js](https://nextjs.org/docs) — recursos e API do Next.js.
+- [Aprenda Next.js](https://nextjs.org/learn) — tutorial interativo.
