@@ -31,10 +31,16 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <a href="#" className="flex flex-col items-center gap-0.5">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logobase2.png" alt="Cardápio Tec" className="h-10 w-auto" />
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logobase2.png"
+              alt="Cardápio Nota 10"
+              className="w-8 brightness-125"
+            />
+          </span>
           <span className="text-[12.6px] font-bold leading-none tracking-tight">
-            Cardápio Tec
+            Cardápio Nota 10
           </span>
         </a>
 

@@ -73,7 +73,7 @@ export function Testimonials() {
       <SectionHeading
         eyebrow="Depoimentos"
         title="O que dizem os restaurantes"
-        subtitle="Donos, gerentes e chefs que trocaram a comanda no papel pelo Cardápio Tec."
+        subtitle="Donos, gerentes e chefs que trocaram a comanda no papel pelo Cardápio Nota 10."
       />
 
       <div className="relative mt-12 flex h-[560px] items-center justify-center gap-4 overflow-hidden px-4">

@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Cardápio Tec — Cardápio digital e pedidos em tempo real",
+  title: "Cardápio Nota 10 — Cardápio digital e pedidos em tempo real",
   description:
     "Seus clientes pedem pela mesa via QR Code e a cozinha recebe na hora. Menos espera, mais giro de mesa — sem instalar nenhum app.",
 };

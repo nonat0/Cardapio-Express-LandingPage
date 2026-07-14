@@ -23,10 +23,16 @@ export function Footer() {
     <footer className="border-t border-border py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 sm:flex-row">
         <a href="#" className="flex flex-col items-center gap-0.5">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logobase2.png" alt="Cardápio Tec" className="h-10 w-auto" />
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logobase2.png"
+              alt="Cardápio Nota 10"
+              className="w-8 brightness-125"
+            />
+          </span>
           <span className="text-[12.6px] font-bold leading-none tracking-tight">
-            Cardápio Tec
+            Cardápio Nota 10
           </span>
         </a>
 
@@ -55,7 +61,7 @@ export function Footer() {
         </div>
       </div>
       <p className="mt-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Cardápio Tec. Todos os direitos reservados.
+        © {new Date().getFullYear()} Cardápio Nota 10. Todos os direitos reservados.
       </p>
     </footer>
   );

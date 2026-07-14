@@ -1,6 +1,6 @@
-# Cardápio Tec
+# Cardápio Nota 10
 
-Landing page do **Cardápio Tec** — cardápio digital com pedidos pela mesa via QR Code e cozinha em tempo real. Construída com [Next.js](https://nextjs.org), Tailwind CSS e Framer Motion.
+Landing page do **Cardápio Nota 10** — cardápio digital com pedidos pela mesa via QR Code e cozinha em tempo real. Construída com [Next.js](https://nextjs.org), Tailwind CSS e Framer Motion.
 
 ## Começando
 

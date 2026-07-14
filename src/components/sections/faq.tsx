@@ -72,7 +72,7 @@ export function FAQ() {
       <SectionHeading
         eyebrow="FAQ"
         title="Perguntas frequentes"
-        subtitle="Tudo o que você precisa saber sobre o Cardápio Tec. Não achou a resposta? Fale com a gente."
+        subtitle="Tudo o que você precisa saber sobre o Cardápio Nota 10. Não achou a resposta? Fale com a gente."
       />
       <div className="mx-auto mt-12 max-w-2xl px-4">
         {faqs.map((f) => (
