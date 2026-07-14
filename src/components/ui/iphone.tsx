@@ -6,9 +6,12 @@ import { cn } from "@/lib/utils";
  */
 export function Iphone({
   className,
+  islandClassName,
   children,
 }: {
   className?: string;
+  /** Overrides the dynamic island size (e.g. smaller island on small frames). */
+  islandClassName?: string;
   children?: React.ReactNode;
 }) {
   return (
@@ -25,14 +28,19 @@ export function Iphone({
       {/* screen */}
       <div className="relative h-full w-full overflow-hidden rounded-[2.4rem] bg-white">
         {/* dynamic island */}
-        <div className="absolute left-1/2 top-[10px] z-30 h-[18px] w-[78px] -translate-x-1/2 rounded-full bg-black" />
+        <div
+          className={cn(
+            "absolute left-1/2 top-[10px] z-30 h-[18px] w-[78px] -translate-x-1/2 rounded-full bg-black",
+            islandClassName,
+          )}
+        />
         {children ?? <MenuScreen />}
       </div>
     </div>
   );
 }
 
-function StatusBar() {
+export function StatusBar() {
   return (
     <div className="flex items-center justify-between px-5 pt-3 text-[9px] font-semibold text-zinc-900">
       <span>20:14</span>
