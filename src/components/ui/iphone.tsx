@@ -45,7 +45,6 @@ export function StatusBar() {
     <div className="flex items-center justify-between px-5 pt-3 text-[9px] font-semibold text-zinc-900">
       <span>20:14</span>
       <span className="flex items-center gap-1">
-        <span className="text-[8px]">●●●</span>
         <span className="h-2 w-4 rounded-[2px] border border-zinc-900/70" />
       </span>
     </div>
